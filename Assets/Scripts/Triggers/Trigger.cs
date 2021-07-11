@@ -8,6 +8,6 @@ public class Trigger : MonoBehaviour
 
     public void SetTrigger()
     {
-        triggerable.Trigger();
+        triggerable?.Trigger();
     }
 }

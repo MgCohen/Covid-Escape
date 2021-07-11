@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6908609030455999289}
   - component: {fileID: 1387546651230768861}
   - component: {fileID: 4225290529025159239}
+  - component: {fileID: 4893983151495985510}
+  - component: {fileID: 3223830005227220427}
   m_Layer: 0
   m_Name: iten_vacina_comum
   m_TagString: Untagged
@@ -90,8 +92,33 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5427099292632261224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4893983151495985510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427099292632261224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcdfbfe001b34a548790eecdf5f533d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3223830005227220427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427099292632261224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70de589577cf64fd79e63c625e0143f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerable: {fileID: 0}

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7503734624259594563}
   - component: {fileID: 5905984574447299543}
   - component: {fileID: 2087256387129093820}
+  - component: {fileID: 6271271566261532131}
+  - component: {fileID: 7167306423759073441}
   m_Layer: 6
   m_Name: iten_material_balao
   m_TagString: Untagged
@@ -90,8 +92,33 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5500750133466367392}
   m_Material: {fileID: 13400000, guid: e6b86773ae9fe4bbf99d288d21c3f247, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6271271566261532131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500750133466367392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdcdfbfe001b34a548790eecdf5f533d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7167306423759073441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500750133466367392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70de589577cf64fd79e63c625e0143f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerable: {fileID: 0}
