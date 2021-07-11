@@ -1882,6 +1882,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5360202737956737834, guid: 60e45e4ecc0852449bba58453b2fb058, type: 3}
+      propertyPath: jumpForce.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1880192215591407635, guid: 60e45e4ecc0852449bba58453b2fb058, type: 3}
       propertyPath: m_RootOrder
       value: 120
@@ -4093,7 +4097,7 @@ MonoBehaviour:
   model: {fileID: 306654095}
   jumpSpeed: 20
   moveSpeed: 6
-  dashSpeed: 20
+  dashSpeed: 11
   gravity: 1
   speed: {x: 0, y: 0, z: 0}
 --- !u!1001 &708648395
@@ -4453,6 +4457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5360202737956737834, guid: 60e45e4ecc0852449bba58453b2fb058, type: 3}
+      propertyPath: jumpForce.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1880192215591407635, guid: 60e45e4ecc0852449bba58453b2fb058, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -10064,11 +10072,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7022725712984873518, guid: 0820d87675a9d1947a527f51c2a3e275, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.02
+      value: 87.62
       objectReference: {fileID: 0}
     - target: {fileID: 7022725712984873518, guid: 0820d87675a9d1947a527f51c2a3e275, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.35
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 7022725712984873518, guid: 0820d87675a9d1947a527f51c2a3e275, type: 3}
       propertyPath: m_LocalPosition.z
