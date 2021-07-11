@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class Shooter: MonoBehaviour
 {
     public GameObject prefab;
     public Transform gunPoint;
@@ -22,4 +22,5 @@ public class Shooter : MonoBehaviour
         obj.GetComponent<Rigidbody>().AddForce(shotForce);
         if (prefabLifetime != -1) Destroy(obj, prefabLifetime);
     }
+
 }
