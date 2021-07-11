@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
         if (!controller.isGrounded) speed.y -= gravity;
         else speed.y = -1;
 
+
         speed.x = moveSpeed;
 
         if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded) speed.y = jumpSpeed;
@@ -34,4 +35,11 @@ public class Player : MonoBehaviour
         controller.Move(speed * Time.deltaTime);
 
     }
+
+    public void AddSpeed(Vector3 direction)
+    {
+        speed += direction;
+    }
+
+
 }
