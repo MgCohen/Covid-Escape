@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public CharacterController controller;
+    public Animator anim;
     public Transform model;
 
     public float jumpSpeed;
@@ -23,12 +24,20 @@ public class Player : MonoBehaviour
         {
 
             if (!controller.isGrounded) speed.y -= gravity;
-            else if (speed.y <= 0) speed.y = -1;
+            else if (speed.y <= 0)
+            {
+                speed.y = -1;
+                anim.SetBool("Jumping", false);
+            }
 
 
             speed.x = moveSpeed;
 
-            if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded) speed.y = jumpSpeed;
+            if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
+            {
+                speed.y = jumpSpeed;
+                anim.SetBool("Jumping", true);
+            }
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
@@ -52,26 +61,21 @@ public class Player : MonoBehaviour
     IEnumerator Dashing()
     {
         dashing = true;
+        anim.SetBool("Dash", true);
         var oldSpeed = speed;
         speed = new Vector3(dashSpeed, 0, 0);
-        var scale = model.localScale;
-        scale.y = 1f;
-        model.localScale = scale;
         controller.height = 1f;
         if (controller.isGrounded)
         {
             controller.enabled = false;
-            transform.position += Vector3.down / 2;
+            //transform.position += Vector3.down / 2;
             controller.enabled = true;
-            Debug.Log(2);
         }
         yield return new WaitForSeconds(0.3f);
-        scale.y = 2f;
-        model.localScale = scale;
         controller.height = 2;
         speed = oldSpeed;
+        anim.SetBool("Dash", false);
         dashing = false;
-
     }
 
     public void Vaccine()
